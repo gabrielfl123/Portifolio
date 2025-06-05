@@ -1,0 +1,61 @@
+
+        html {
+            scroll-behavior: smooth; /* Rolagem suave para navegação */
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F5F7FA; /* Cor de fundo padrão */
+            color: #212B36; /* Cor de texto padrão */
+        }
+        /* Ajuste do padding e centralização para todas as seções */
+        .section-padding {
+            padding: 5rem 1.5rem; /* Padding vertical e horizontal padrão */
+            max-width: 1200px; /* Largura máxima do conteúdo */
+            margin: 0 auto; /* Centraliza o conteúdo da seção */
+        }
+        @media (min-width: 768px) {
+            .section-padding {
+                padding: 7rem 2rem; /* Padding maior em telas maiores */
+            }
+        }
+        .animate-on-scroll {
+            opacity: 0; /* Começa invisível */
+            transform: translateY(20px); /* Começa ligeiramente abaixo */
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Transição suave */
+        }
+        .animate-on-scroll.is-visible {
+            opacity: 1; /* Torna visível */
+            transform: translateY(0); /* Volta à posição original */
+        }
+        /* Estilo para links de navegação e rodapé para evitar quebra de linha em telas pequenas */
+        .header-nav-link, .footer-text {
+            white-space: nowrap;
+        }
+        /* Estilo para o botão Voltar ao Topo */
+        #backToTopBtn {
+            display: none; /* Escondido por padrão */
+            position: fixed; /* Posição fixa na tela */
+            bottom: 20px; /* Distância do fundo */
+            right: 20px; /* Distância da direita */
+            z-index: 99; /* Acima de outros elementos */
+            border: none; /* Sem borda */
+            outline: none; /* Sem outline */
+            background-color: #007BFF; /* Cor de fundo */
+            color: white; /* Cor do texto */
+            cursor: pointer; /* Cursor de clique */
+            padding: 15px; /* Preenchimento */
+            border-radius: 50%; /* Redondo */
+            font-size: 18px; /* Tamanho do ícone */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+            transition: background-color 0.3s, transform 0.3s; /* Transição suave */
+        }
+        #backToTopBtn:hover {
+            background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+            transform: translateY(-5px); /* Efeito de elevação */
+        }
+        /* Animação para ícones de habilidades ao passar o mouse - ajustado para ser mais suave */
+        .skill-icon-hover:hover .fa-brands,
+        .skill-icon-hover:hover .fa-solid {
+            transform: scale(1.1); /* Aumenta o ícone de forma mais suave */
+            transition: transform 0.2s ease-in-out;
+        }
