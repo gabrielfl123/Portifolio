@@ -1,406 +1,680 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-     <script src="javascript.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    
+  <head>
+    <meta charset="UTF-8" />
+    <script src="javascript.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
     <title>Gabriel Ferreira Lopes - Portfólio Desenvolvedor Full Stack</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'primary-dark': '#212B36',       /* Azul escuro mais profundo */
-                        'accent-blue': '#007BFF',        /* Azul vibrante para destaques */
-                        'light-gray': '#F5F7FA',         /* Cinza claro para fundos */
-                        'medium-gray': '#6B7280',        /* Cinza médio para detalhes */
-                        'success-green': '#28A745',      /* Verde para sucesso/botões */
-                        'whatsapp-green': '#25D366',     /* Verde do WhatsApp */
-                        'text-dark': '#344054',          /* Cor de texto mais escura e profissional */
-                        'border-light': '#D1D5DB',       /* Cor de borda clara */
-                        'hero-gradient-start': '#1A237E', /* Azul escuro mais dramático para o gradiente */
-                        'hero-gradient-end': '#42A5F5',   /* Azul mais claro para o gradiente */
-                    },
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'], /* Define a fonte Inter como padrão */
-                    }
-                }
-            }
-        }
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "primary-dark": "#212B36" /* Azul escuro mais profundo */,
+              "accent-blue": "#007BFF" /* Azul vibrante para destaques */,
+              "light-gray": "#F5F7FA" /* Cinza claro para fundos */,
+              "medium-gray": "#6B7280" /* Cinza médio para detalhes */,
+              "success-green": "#28A745" /* Verde para sucesso/botões */,
+              "whatsapp-green": "#25D366" /* Verde do WhatsApp */,
+              "text-dark":
+                "#344054" /* Cor de texto mais escura e profissional */,
+              "border-light": "#D1D5DB" /* Cor de borda clara */,
+              "hero-gradient-start":
+                "#1A237E" /* Azul escuro mais dramático para o gradiente */,
+              "hero-gradient-end":
+                "#42A5F5" /* Azul mais claro para o gradiente */,
+            },
+            fontFamily: {
+              sans: [
+                "Inter",
+                "sans-serif",
+              ] /* Define a fonte Inter como padrão */,
+            },
+          },
+        },
+      };
     </script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-</head>
-<body class="bg-light-gray text-primary-dark">
-
-    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="bg-light-gray text-primary-dark">
     <header class="bg-primary-dark text-light-gray shadow-lg sticky top-0 z-50">
-        <nav class="section-padding py-4 flex flex-col md:flex-row justify-between items-center">
-            <a href="#hero" class="text-2xl font-bold hover:text-accent-blue transition-colors duration-300 mb-4 md:mb-0">
-                Gabriel F. Lopes
-            </a>
-            <ul class="flex flex-wrap justify-center gap-6 text-lg">
-                <li><a href="#about" class="hover:text-accent-blue transition-colors duration-300 header-nav-link">Sobre Mim</a></li>
-                <li><a href="#skills" class="hover:text-accent-blue transition-colors duration-300 header-nav-link">Habilidades</a></li>
-                <li><a href="#projects" class="hover:text-accent-blue transition-colors duration-300 header-nav-link">Projetos</a></li>
-                <li><a href="#contact" class="hover:text-accent-blue transition-colors duration-300 header-nav-link">Contato</a></li>
-            </ul>
-        </nav>
+      <nav
+        class="section-padding py-4 flex flex-col md:flex-row justify-between items-center"
+      >
+        <a
+          href="#hero"
+          class="text-2xl font-bold hover:text-accent-blue transition-colors duration-300 mb-4 md:mb-0"
+        >
+          Gabriel F. Lopes
+        </a>
+        <ul class="flex flex-wrap justify-center gap-6 text-lg">
+          <li>
+            <a
+              href="#about"
+              class="hover:text-accent-blue transition-colors duration-300 header-nav-link"
+              >Sobre Mim</a
+            >
+          </li>
+          <li>
+            <a
+              href="#skills"
+              class="hover:text-accent-blue transition-colors duration-300 header-nav-link"
+              >Habilidades</a
+            >
+          </li>
+          <li>
+            <a
+              href="#projects"
+              class="hover:text-accent-blue transition-colors duration-300 header-nav-link"
+              >Projetos</a
+            >
+          </li>
+          <li>
+            <a
+              href="#contact"
+              class="hover:text-accent-blue transition-colors duration-300 header-nav-link"
+              >Contato</a
+            >
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-        <!-- Seção Hero/Introdução -->
-        <section id="hero" class="bg-gradient-to-r from-hero-gradient-start to-hero-gradient-end text-light-gray min-h-screen flex items-center justify-center text-center p-4">
-            <div class="animate-on-scroll is-visible p-8 rounded-lg">
-                <h1 class="text-5xl md:text-7xl font-extrabold mb-4 leading-tight">
-                    Olá! Eu sou <span class="text-yellow-300">Gabriel Ferreira Lopes</span>
-                </h1>
-                <p class="text-xl md:text-3xl font-light mb-8">
-                    Desenvolvedor Full Stack em formação e entusiasta da tecnologia.
-                </p>
-                <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
-                    <a href="#projects" class="bg-success-green hover:bg-green-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105 inline-block w-full sm:w-auto">
-                        Ver Meus Projetos <i class="fas fa-arrow-right ml-2"></i>
-                    </a>
-                    <!-- Adicionado 'aria-disabled' e 'tabindex' para links vazios para melhor acessibilidade -->
-                    <a href="Gabriel, curriculo dev.pdf" download="Curriculo_Gabriel_Ferreira_Lopes.pdf"
-                       class="bg-transparent border-2 border-light-gray hover:border-accent-blue text-light-gray hover:text-accent-blue font-bold py-3 px-8 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105 inline-block w-full sm:w-auto"
-                       aria-disabled="true" tabindex="-1">
-                        Baixar Currículo <i class="fas fa-download ml-2"></i>
-                    </a>
-                </div>
+      <!-- Seção Hero/Introdução -->
+      <section
+        id="hero"
+        class="bg-gradient-to-r from-hero-gradient-start to-hero-gradient-end text-light-gray min-h-screen flex items-center justify-center text-center p-4"
+      >
+        <div class="animate-on-scroll is-visible p-8 rounded-lg">
+          <h1 class="text-5xl md:text-7xl font-extrabold mb-4 leading-tight">
+            Olá! Eu sou
+            <span class="text-yellow-300">Gabriel Ferreira Lopes</span>
+          </h1>
+          <p class="text-xl md:text-3xl font-light mb-8">
+            Desenvolvedor Full Stack em formação e entusiasta da tecnologia.
+          </p>
+          <div
+            class="flex flex-col sm:flex-row justify-center items-center gap-4"
+          >
+            <a
+              href="#projects"
+              class="bg-success-green hover:bg-green-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105 inline-block w-full sm:w-auto"
+            >
+              Ver Meus Projetos <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+            <!-- Adicionado 'aria-disabled' e 'tabindex' para links vazios para melhor acessibilidade -->
+            <a
+              href="Gabriel, curriculo dev.pdf"
+              download="Curriculo_Gabriel_Ferreira_Lopes.pdf"
+              class="bg-transparent border-2 border-light-gray hover:border-accent-blue text-light-gray hover:text-accent-blue font-bold py-3 px-8 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105 inline-block w-full sm:w-auto"
+              aria-disabled="true"
+              tabindex="-1"
+            >
+              Baixar Currículo <i class="fas fa-download ml-2"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seção Sobre Mim -->
+      <section
+        id="about"
+        class="section-padding bg-white shadow-md rounded-lg animate-on-scroll"
+      >
+        <h2 class="text-4xl font-bold text-center mb-8 text-primary-dark">
+          Sobre Mim
+        </h2>
+        <div
+          class="text-lg md:text-xl leading-relaxed max-w-3xl mx-auto text-text-dark"
+        >
+          <p class="mb-4">
+            Entusiasta da tecnologia e futuro desenvolvedor full stack, tenho 23
+            anos e estou imerso no universo da programação através do curso de
+            <strong class="text-accent-blue"
+              >Análise e Desenvolvimento de Sistemas (ADS)</strong
+            >
+            na Unicesumar.
+          </p>
+          <p class="mb-4">
+            Minha paixão é transformar ideias em soluções digitais, e estou
+            constantemente buscando aprender e aprimorar minhas habilidades em
+            <strong class="text-accent-blue">Front-End</strong> e
+            <strong class="text-accent-blue">Back-End</strong>.
+          </p>
+          <p>
+            Meu objetivo é conquistar meu primeiro desafio profissional,
+            contribuindo com minha dedicação e sede de aprendizado para
+            construir aplicações robustas e inovadoras que impactem
+            positivamente.
+          </p>
+          <!-- Educação integrada aqui -->
+          <div
+            class="mt-10 pt-6 border-t border-border-light flex items-center flex-col md:flex-row text-center md:text-left"
+          >
+            <img
+              src="caminho/para/sua/foto.jpg"
+              alt="Foto de Gabriel Ferreira Lopes"
+              class="w-32 h-32 rounded-full mr-4"
+            />
+            <i
+              class="fas fa-graduation-cap text-accent-blue text-5xl md:text-6xl mr-0 md:mr-6 mb-4 md:mb-0"
+            ></i>
+            <div>
+              <h3 class="text-2xl font-semibold mb-2 text-primary-dark">
+                Análise e Desenvolvimento de Sistemas (ADS)
+              </h3>
+              <p class="text-xl text-medium-gray">Unicesumar</p>
+              <p class="text-lg text-medium-gray">Cursando atualmente</p>
+              <div class="mt-10 pt-6 border-t border-border-light">
+                <h3
+                  class="text-2xl font-semibold mb-4 text-primary-dark text-center md:text-left"
+                >
+                  Cursos Complementares
+                </h3>
+                <ul
+                  class="list-disc list-inside text-lg text-medium-gray ml-4 md:ml-0"
+                >
+                  <li>Curso de Java Completo – Hora de Codar</li>
+                  <li>Curso Web Moderno com JavaScript + Projetos</li>
+                </ul>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <!-- Seção Sobre Mim -->
-        <section id="about" class="section-padding bg-white shadow-md rounded-lg animate-on-scroll">
-            <h2 class="text-4xl font-bold text-center mb-8 text-primary-dark">Sobre Mim</h2>
-            <div class="text-lg md:text-xl leading-relaxed max-w-3xl mx-auto text-text-dark">
-                <p class="mb-4">
-                    Entusiasta da tecnologia e futuro desenvolvedor full stack, tenho 23 anos e estou imerso no universo da programação através do curso de <strong class="text-accent-blue">Análise e Desenvolvimento de Sistemas (ADS)</strong> na Unicesumar.
-                </p>
-                <p class="mb-4">
-                    Minha paixão é transformar ideias em soluções digitais, e estou constantemente buscando aprender e aprimorar minhas habilidades em <strong class="text-accent-blue">Front-End</strong> e <strong class="text-accent-blue">Back-End</strong>.
-                </p>
-                <p>
-                    Meu objetivo é conquistar meu primeiro desafio profissional, contribuindo com minha dedicação e sede de aprendizado para construir aplicações robustas e inovadoras que impactem positivamente.
-                </p>
-                <!-- Educação integrada aqui -->
-                <div class="mt-10 pt-6 border-t border-border-light flex items-center flex-col md:flex-row text-center md:text-left">
-                    <i class="fas fa-graduation-cap text-accent-blue text-5xl md:text-6xl mr-0 md:mr-6 mb-4 md:mb-0"></i>
-                    <div>
-                        <h3 class="text-2xl font-semibold mb-2 text-primary-dark">Análise e Desenvolvimento de Sistemas (ADS)</h3>
-                        <p class="text-xl text-medium-gray">Unicesumar</p>
-                        <p class="text-lg text-medium-gray">Cursando atualmente</p>
-                        <div class="mt-10 pt-6 border-t border-border-light">
-                    <h3 class="text-2xl font-semibold mb-4 text-primary-dark text-center md:text-left">Cursos Complementares</h3>
-                    <ul class="list-disc list-inside text-lg text-medium-gray ml-4 md:ml-0">
-                        <li>Curso de Java Completo – Hora de Codar</li>
-                        <li>Curso Web Moderno com JavaScript + Projetos</li>
-                    </ul>
-                </div>
-                    </div>
-                    
-                </div>
-                
+      <!-- Seção Habilidades -->
+      <section
+        id="skills"
+        class="section-padding bg-light-gray animate-on-scroll"
+      >
+        <h2 class="text-4xl font-bold text-center mb-8 text-primary-dark">
+          Minhas Habilidades
+        </h2>
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 text-center max-w-4xl mx-auto"
+        >
+          <!-- Card de Front-End -->
+          <div
+            class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 border border-border-light skill-icon-hover"
+          >
+            <h3 class="text-2xl font-semibold mb-4 text-accent-blue">
+              Front-End
+            </h3>
+            <ul class="space-y-3 text-lg text-text-dark">
+              <li><i class="fab fa-html5 text-orange-500 mr-2"></i> HTML5</li>
+              <li><i class="fab fa-css3-alt text-blue-500 mr-2"></i> CSS3</li>
+              <li>
+                <i class="fab fa-js-square text-yellow-500 mr-2"></i> JavaScript
+              </li>
+              <li>
+                <i class="fas fa-file-code text-blue-700 mr-2"></i> TypeScript
+              </li>
+              <li><i class="fab fa-angular text-red-600 mr-2"></i> Angular</li>
+              <li><i class="fab fa-react text-blue-400 mr-2"></i> React</li>
+            </ul>
+          </div>
+
+          <!-- Card de Back-End -->
+          <div
+            class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 border border-border-light skill-icon-hover"
+          >
+            <h3 class="text-2xl font-semibold mb-4 text-accent-blue">
+              Back-End
+            </h3>
+            <ul class="space-y-3 text-lg text-text-dark">
+              <li>
+                <i class="fab fa-node-js text-green-600 mr-2"></i> Node.js
+              </li>
+              <li><i class="fab fa-java text-red-500 mr-2"></i> Java</li>
+              <li>
+                <i class="fas fa-leaf text-green-700 mr-2"></i> Spring Boot
+              </li>
+            </ul>
+          </div>
+
+          <!-- Card de Banco de Dados e Ferramentas -->
+          <div
+            class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 border border-border-light skill-icon-hover"
+          >
+            <h3 class="text-2xl font-semibold mb-4 text-accent-blue">
+              Banco de Dados & Ferramentas
+            </h3>
+            <ul class="space-y-3 text-lg text-text-dark">
+              <li><i class="fas fa-database text-gray-600 mr-2"></i> MySQL</li>
+              <li><i class="fab fa-git-alt text-red-700 mr-2"></i> Git</li>
+              <li><i class="fab fa-github text-gray-800 mr-2"></i> GitHub</li>
+            </ul>
+          </div>
+
+          <!-- Card de Outros -->
+          <div
+            class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 border border-border-light sm:col-span-2 lg:col-span-1 mx-auto w-full sm:max-w-xs lg:max-w-none skill-icon-hover"
+          >
+            <h3 class="text-2xl font-semibold mb-4 text-accent-blue">Outros</h3>
+            <ul class="space-y-3 text-lg text-text-dark">
+              <li>
+                <i class="fas fa-language text-purple-600 mr-2"></i> Inglês
+                Básico
+              </li>
+              <li>
+                <i class="fas fa-lightbulb text-yellow-500 mr-2"></i> Resolução
+                de Problemas
+              </li>
+              <li>
+                <i class="fas fa-users text-blue-500 mr-2"></i> Trabalho em
+                Equipe
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seção Projetos -->
+      <section id="projects" class="section-padding bg-white animate-on-scroll">
+        <h2 class="text-4xl font-bold text-center mb-12 text-primary-dark">
+          Meus Projetos
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+          <!-- Projeto Exemplo 1: Página de Receitas -->
+          <div
+            class="bg-light-gray p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 border border-border-light"
+          >
+            <!-- Alt text melhorado para acessibilidade e SEO -->
+            <img
+              src="https://placehold.co/600x400/D1D5DB/212B36?text=Projeto+Receitas"
+              alt="Screenshot da página web de receitas, mostrando o layout principal e uma receita."
+              class="rounded-md mb-4 w-full h-48 object-cover border border-gray-300"
+            />
+            <h3 class="text-2xl font-semibold mb-2 text-primary-dark">
+              Página de Receitas
+            </h3>
+            <p class="text-medium-gray mb-4">
+              Uma página web simples e responsiva para exibir receitas,
+              demonstrando habilidades em layout e interatividade front-end.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span
+                class="bg-accent-blue text-white text-xs px-3 py-1 rounded-full"
+                >HTML</span
+              >
+              <span
+                class="bg-accent-blue text-white text-xs px-3 py-1 rounded-full"
+                >CSS</span
+              >
+              <span
+                class="bg-accent-blue text-white text-xs px-3 py-1 rounded-full"
+                >JavaScript</span
+              >
             </div>
-        </section>
-
-        <!-- Seção Habilidades -->
-        <section id="skills" class="section-padding bg-light-gray animate-on-scroll">
-            <h2 class="text-4xl font-bold text-center mb-8 text-primary-dark">Minhas Habilidades</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 text-center max-w-4xl mx-auto">
-
-                <!-- Card de Front-End -->
-                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 border border-border-light skill-icon-hover">
-                    <h3 class="text-2xl font-semibold mb-4 text-accent-blue">Front-End</h3>
-                    <ul class="space-y-3 text-lg text-text-dark">
-                        <li><i class="fab fa-html5 text-orange-500 mr-2"></i> HTML5</li>
-                        <li><i class="fab fa-css3-alt text-blue-500 mr-2"></i> CSS3</li>
-                        <li><i class="fab fa-js-square text-yellow-500 mr-2"></i> JavaScript</li>
-                        <li><i class="fas fa-file-code text-blue-700 mr-2"></i> TypeScript</li>
-                        <li><i class="fab fa-angular text-red-600 mr-2"></i> Angular</li>
-                        <li><i class="fab fa-react text-blue-400 mr-2"></i> React</li>
-                    </ul>
-                </div>
-
-                <!-- Card de Back-End -->
-                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 border border-border-light skill-icon-hover">
-                    <h3 class="text-2xl font-semibold mb-4 text-accent-blue">Back-End</h3>
-                    <ul class="space-y-3 text-lg text-text-dark">
-                        <li><i class="fab fa-node-js text-green-600 mr-2"></i> Node.js</li>
-                        <li><i class="fab fa-java text-red-500 mr-2"></i> Java </li>
-                        <li><i class="fas fa-leaf text-green-700 mr-2"></i> Spring Boot</li>
-                    </ul>
-                </div>
-
-                <!-- Card de Banco de Dados e Ferramentas -->
-                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 border border-border-light skill-icon-hover">
-                    <h3 class="text-2xl font-semibold mb-4 text-accent-blue">Banco de Dados & Ferramentas</h3>
-                    <ul class="space-y-3 text-lg text-text-dark">
-                        <li><i class="fas fa-database text-gray-600 mr-2"></i> MySQL</li>
-                        <li><i class="fab fa-git-alt text-red-700 mr-2"></i> Git</li>
-                        <li><i class="fab fa-github text-gray-800 mr-2"></i> GitHub</li>
-                    </ul>
-                </div>
-
-                <!-- Card de Outros -->
-                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 border border-border-light sm:col-span-2 lg:col-span-1 mx-auto w-full sm:max-w-xs lg:max-w-none skill-icon-hover">
-                    <h3 class="text-2xl font-semibold mb-4 text-accent-blue">Outros</h3>
-                    <ul class="space-y-3 text-lg text-text-dark">
-                        <li><i class="fas fa-language text-purple-600 mr-2"></i> Inglês Básico</li>
-                        <li><i class="fas fa-lightbulb text-yellow-500 mr-2"></i> Resolução de Problemas</li>
-                        <li><i class="fas fa-users text-blue-500 mr-2"></i> Trabalho em Equipe</li>
-                    </ul>
-                </div>
-
+            <div class="flex justify-between items-center mt-4">
+              <!-- Links vazios com aria-disabled e tabindex para acessibilidade -->
+              <a
+                href="#"
+                class="text-accent-blue hover:underline font-semibold text-base"
+                aria-disabled="true"
+                tabindex="-1"
+                >Ver Código <i class="fab fa-github ml-1"></i
+              ></a>
+              <a
+                href="#"
+                class="bg-success-green hover:bg-green-700 text-white text-sm py-2 px-4 rounded-full transition-colors duration-300"
+                aria-disabled="true"
+                tabindex="-1"
+                >Ver Projeto <i class="fas fa-external-link-alt ml-1"></i
+              ></a>
             </div>
-        </section>
+          </div>
 
-        <!-- Seção Projetos -->
-        <section id="projects" class="section-padding bg-white animate-on-scroll">
-            <h2 class="text-4xl font-bold text-center mb-12 text-primary-dark">Meus Projetos</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-
-                <!-- Projeto Exemplo 1: Página de Receitas -->
-                <div class="bg-light-gray p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 border border-border-light">
-                    <!-- Alt text melhorado para acessibilidade e SEO -->
-                    <img src="https://placehold.co/600x400/D1D5DB/212B36?text=Projeto+Receitas" alt="Screenshot da página web de receitas, mostrando o layout principal e uma receita." class="rounded-md mb-4 w-full h-48 object-cover border border-gray-300">
-                    <h3 class="text-2xl font-semibold mb-2 text-primary-dark">Página de Receitas</h3>
-                    <p class="text-medium-gray mb-4">
-                        Uma página web simples e responsiva para exibir receitas, demonstrando habilidades em layout e interatividade front-end.
-                    </p>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="bg-accent-blue text-white text-xs px-3 py-1 rounded-full">HTML</span>
-                        <span class="bg-accent-blue text-white text-xs px-3 py-1 rounded-full">CSS</span>
-                        <span class="bg-accent-blue text-white text-xs px-3 py-1 rounded-full">JavaScript</span>
-                    </div>
-                    <div class="flex justify-between items-center mt-4">
-                        <!-- Links vazios com aria-disabled e tabindex para acessibilidade -->
-                        <a href="#" class="text-accent-blue hover:underline font-semibold text-base" aria-disabled="true" tabindex="-1">Ver Código <i class="fab fa-github ml-1"></i></a>
-                        <a href="#" class="bg-success-green hover:bg-green-700 text-white text-sm py-2 px-4 rounded-full transition-colors duration-300" aria-disabled="true" tabindex="-1">Ver Projeto <i class="fas fa-external-link-alt ml-1"></i></a>
-                    </div>
-                </div>
-
-                <!-- Projeto Exemplo 2: Calculadora Web -->
-                <div class="bg-light-gray p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 border border-border-light">
-                    <!-- Alt text melhorado -->
-                    <img src="https://placehold.co/600x400/D1D5DB/212B36?text=Projeto+Calculadora" alt="Imagem de uma calculadora web funcional, mostrando botões numéricos e de operações." class="rounded-md mb-4 w-full h-48 object-cover border border-gray-300">
-                    <h3 class="text-2xl font-semibold mb-2 text-primary-dark">Calculadora Web</h3>
-                    <p class="text-medium-gray mb-4">
-                        Uma calculadora funcional desenvolvida para praticar lógica de programação e manipulação do DOM.
-                    </p>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="bg-accent-blue text-white text-xs px-3 py-1 rounded-full">HTML</span>
-                        <span class="bg-accent-blue text-white text-xs px-3 py-1 rounded-full">CSS</span>
-                        <span class="bg-accent-blue text-white text-xs px-3 py-1 rounded-full">JavaScript</span>
-                    </div>
-                    <div class="flex justify-between items-center mt-4">
-                        <!-- Links vazios com aria-disabled e tabindex para acessibilidade -->
-                        <a href="#" class="text-accent-blue hover:underline font-semibold text-base" aria-disabled="true" tabindex="-1">Ver Código <i class="fab fa-github ml-1"></i></a>
-                        <a href="#" class="bg-success-green hover:bg-green-700 text-white text-sm py-2 px-4 rounded-full transition-colors duration-300" aria-disabled="true" tabindex="-1">Ver Projeto <i class="fas fa-external-link-alt ml-1"></i></a>
-                    </div>
-                </div>
-
-                <!-- Projeto Exemplo 3: API de Cadastro (Backend) -->
-                <div class="bg-light-gray p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 border border-border-light">
-                    <!-- Alt text melhorado -->
-                    <img src="https://placehold.co/600x400/D1D5DB/212B36?text=Projeto+API" alt="Ilustração de uma API, representando o backend de gerenciamento de usuários." class="rounded-md mb-4 w-full h-48 object-cover border border-gray-300">
-                    <h3 class="text-2xl font-semibold mb-2 text-primary-dark">API de Cadastro Simples</h3>
-                    <p class="text-medium-gray mb-4">
-                        Exemplo de API RESTful básica para gerenciamento de usuários, utilizando Node.js e MySQL.
-                    </p>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="bg-accent-blue text-white text-xs px-3 py-1 rounded-full">Node.js</span>
-                        <span class="bg-accent-blue text-white text-xs px-3 py-1 rounded-full">Express.js</span>
-                        <span class="bg-accent-blue text-white text-xs px-3 py-1 rounded-full">MySQL</span>
-                    </div>
-                    <div class="flex justify-between items-center mt-4">
-                        <!-- Links vazios com aria-disabled e tabindex para acessibilidade -->
-                        <a href="#" class="text-accent-blue hover:underline font-semibold text-base" aria-disabled="true" tabindex="-1">Ver Código <i class="fab fa-github ml-1"></i></a>
-                        <!-- Como é uma API, não há link para "Ver Projeto" -->
-                        <span class="text-sm text-medium-gray"><i>(Sem deploy público)</i></span>
-                    </div>
-                </div>
-
-                <!-- Adicione mais projetos aqui seguindo o mesmo padrão -->
-
+          <!-- Projeto Exemplo 2: Calculadora Web -->
+          <div
+            class="bg-light-gray p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 border border-border-light"
+          >
+            <!-- Alt text melhorado -->
+            <img
+              src="https://placehold.co/600x400/D1D5DB/212B36?text=Projeto+Calculadora"
+              alt="Imagem de uma calculadora web funcional, mostrando botões numéricos e de operações."
+              class="rounded-md mb-4 w-full h-48 object-cover border border-gray-300"
+            />
+            <h3 class="text-2xl font-semibold mb-2 text-primary-dark">
+              Calculadora Web
+            </h3>
+            <p class="text-medium-gray mb-4">
+              Uma calculadora funcional desenvolvida para praticar lógica de
+              programação e manipulação do DOM.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span
+                class="bg-accent-blue text-white text-xs px-3 py-1 rounded-full"
+                >HTML</span
+              >
+              <span
+                class="bg-accent-blue text-white text-xs px-3 py-1 rounded-full"
+                >CSS</span
+              >
+              <span
+                class="bg-accent-blue text-white text-xs px-3 py-1 rounded-full"
+                >JavaScript</span
+              >
             </div>
-            <div class="text-center mt-12">
-                <p class="text-xl text-medium-gray">
-                    Em breve, mais projetos incríveis aqui!
-                </p>
+            <div class="flex justify-between items-center mt-4">
+              <!-- Links vazios com aria-disabled e tabindex para acessibilidade -->
+              <a
+                href="#"
+                class="text-accent-blue hover:underline font-semibold text-base"
+                aria-disabled="true"
+                tabindex="-1"
+                >Ver Código <i class="fab fa-github ml-1"></i
+              ></a>
+              <a
+                href="#"
+                class="bg-success-green hover:bg-green-700 text-white text-sm py-2 px-4 rounded-full transition-colors duration-300"
+                aria-disabled="true"
+                tabindex="-1"
+                >Ver Projeto <i class="fas fa-external-link-alt ml-1"></i
+              ></a>
             </div>
-        </section>
+          </div>
 
-        <!-- Seção Contato -->
-        <section id="contact" class="section-padding bg-white shadow-md rounded-lg animate-on-scroll">
-            <h2 class="text-4xl font-bold text-center mb-12 text-primary-dark">Entre em Contato</h2>
-            <div class="max-w-2xl mx-auto flex flex-col items-center"> <!-- Adicionado flex-col e items-center para garantir centralização vertical e horizontal -->
-                <div class="flex flex-wrap justify-center gap-8 mb-10 w-full"> <!-- w-full para garantir que o flex ocupe o espaço disponível -->
-                    <!-- Link para GitHub -->
-                    <a href="https://github.com/gabrielfl123" target="_blank" rel="noopener noreferrer"
-                       class="flex items-center space-x-3 text-primary-dark hover:text-accent-blue transition-colors duration-300 transform hover:scale-105">
-                        <i class="fab fa-github text-4xl"></i>
-                        <span class="text-xl font-semibold">GitHub</span>
-                    </a>
-                    <!-- Link para LinkedIn -->
-                    <a href="https://www.linkedin.com/in/gabrielfl-gfl/" target="_blank" rel="noopener noreferrer"
-                       class="flex items-center space-x-3 text-primary-dark hover:text-accent-blue transition-colors duration-300 transform hover:scale-105">
-                        <i class="fab fa-linkedin text-4xl"></i>
-                        <span class="text-xl font-semibold">LinkedIn</span>
-                    </a>
-                    <!-- Botão para WhatsApp -->
-                    <a href="https://wa.me/5516994314040" target="_blank" rel="noopener noreferrer"
-                       class="flex items-center space-x-3 text-white bg-whatsapp-green hover:bg-green-600 py-3 px-6 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105">
-                        <i class="fab fa-whatsapp text-4xl"></i>
-                        <span class="text-xl font-semibold">WhatsApp</span>
-                    </a>
-                </div>
-
-                <p class="text-center text-lg mb-6 text-medium-gray">
-                    Ou envie uma mensagem diretamente:
-                </p>
-
-                <!-- Formulário de Contato -->
-                <form id="contactForm" class="space-y-6 w-full">
-                    <div>
-                        <label for="name" class="block text-lg font-medium mb-2 text-text-dark">Nome:</label>
-                        <input type="text" id="name" name="name" required
-                               class="w-full p-3 border border-border-light rounded-md focus:outline-none focus:ring-2 focus:ring-accent-blue transition-shadow bg-light-gray text-text-dark">
-                        <p id="nameError" class="text-red-500 text-sm mt-1 hidden">Por favor, insira seu nome.</p>
-                    </div>
-                    <div>
-                        <label for="email" class="block text-lg font-medium mb-2 text-text-dark">E-mail:</label>
-                        <input type="email" id="email" name="email" required
-                               class="w-full p-3 border border-border-light rounded-md focus:outline-none focus:ring-2 focus:ring-accent-blue transition-shadow bg-light-gray text-text-dark">
-                        <p id="emailError" class="text-red-500 text-sm mt-1 hidden">Por favor, insira um e-mail válido.</p>
-                    </div>
-                    <div>
-                        <label for="message" class="block text-lg font-medium mb-2 text-text-dark">Mensagem:</label>
-                        <textarea id="message" name="message" rows="6" required
-                                  class="w-full p-3 border border-border-light rounded-md focus:outline-none focus:ring-2 focus:ring-accent-blue resize-y transition-shadow bg-light-gray text-text-dark"></textarea>
-                        <p id="messageError" class="text-red-500 text-sm mt-1 hidden">Por favor, insira sua mensagem.</p>
-                    </div>
-                    <button type="submit"
-                            class="w-full bg-success-green hover:bg-green-700 text-white font-bold py-3 px-6 rounded-md shadow-lg transition-all duration-300 transform hover:scale-105">
-                        Enviar Mensagem <i class="fas fa-paper-plane ml-2"></i>
-                    </button>
-                    <div id="formStatus" class="mt-4 text-center text-lg font-semibold"></div>
-                </form>
+          <!-- Projeto Exemplo 3: API de Cadastro (Backend) -->
+          <div
+            class="bg-light-gray p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 border border-border-light"
+          >
+            <!-- Alt text melhorado -->
+            <img
+              src="https://placehold.co/600x400/D1D5DB/212B36?text=Projeto+API"
+              alt="Ilustração de uma API, representando o backend de gerenciamento de usuários."
+              class="rounded-md mb-4 w-full h-48 object-cover border border-gray-300"
+            />
+            <h3 class="text-2xl font-semibold mb-2 text-primary-dark">
+              API de Cadastro Simples
+            </h3>
+            <p class="text-medium-gray mb-4">
+              Exemplo de API RESTful básica para gerenciamento de usuários,
+              utilizando Node.js e MySQL.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span
+                class="bg-accent-blue text-white text-xs px-3 py-1 rounded-full"
+                >Node.js</span
+              >
+              <span
+                class="bg-accent-blue text-white text-xs px-3 py-1 rounded-full"
+                >Express.js</span
+              >
+              <span
+                class="bg-accent-blue text-white text-xs px-3 py-1 rounded-full"
+                >MySQL</span
+              >
             </div>
-        </section>
+            <div class="flex justify-between items-center mt-4">
+              <!-- Links vazios com aria-disabled e tabindex para acessibilidade -->
+              <a
+                href="#"
+                class="text-accent-blue hover:underline font-semibold text-base"
+                aria-disabled="true"
+                tabindex="-1"
+                >Ver Código <i class="fab fa-github ml-1"></i
+              ></a>
+              <!-- Como é uma API, não há link para "Ver Projeto" -->
+              <span class="text-sm text-medium-gray"
+                ><i>(Sem deploy público)</i></span
+              >
+            </div>
+          </div>
+
+          <!-- Adicione mais projetos aqui seguindo o mesmo padrão -->
+        </div>
+        <div class="text-center mt-12">
+          <p class="text-xl text-medium-gray">
+            Em breve, mais projetos incríveis aqui!
+          </p>
+        </div>
+      </section>
+
+      <!-- Seção Contato -->
+      <section
+        id="contact"
+        class="section-padding bg-white shadow-md rounded-lg animate-on-scroll"
+      >
+        <h2 class="text-4xl font-bold text-center mb-12 text-primary-dark">
+          Entre em Contato
+        </h2>
+        <div class="max-w-2xl mx-auto flex flex-col items-center">
+          <!-- Adicionado flex-col e items-center para garantir centralização vertical e horizontal -->
+          <div class="flex flex-wrap justify-center gap-8 mb-10 w-full">
+            <!-- w-full para garantir que o flex ocupe o espaço disponível -->
+            <!-- Link para GitHub -->
+            <a
+              href="https://github.com/gabrielfl123"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex items-center space-x-3 text-primary-dark hover:text-accent-blue transition-colors duration-300 transform hover:scale-105"
+            >
+              <i class="fab fa-github text-4xl"></i>
+              <span class="text-xl font-semibold">GitHub</span>
+            </a>
+            <!-- Link para LinkedIn -->
+            <a
+              href="https://www.linkedin.com/in/gabrielfl-gfl/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex items-center space-x-3 text-primary-dark hover:text-accent-blue transition-colors duration-300 transform hover:scale-105"
+            >
+              <i class="fab fa-linkedin text-4xl"></i>
+              <span class="text-xl font-semibold">LinkedIn</span>
+            </a>
+            <!-- Botão para WhatsApp -->
+            <a
+              href="https://wa.me/5516994314040"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex items-center space-x-3 text-white bg-whatsapp-green hover:bg-green-600 py-3 px-6 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105"
+            >
+              <i class="fab fa-whatsapp text-4xl"></i>
+              <span class="text-xl font-semibold">WhatsApp</span>
+            </a>
+          </div>
+
+          <p class="text-center text-lg mb-6 text-medium-gray">
+            Ou envie uma mensagem diretamente:
+          </p>
+
+          <!-- Formulário de Contato -->
+          <form id="contactForm" class="space-y-6 w-full">
+            <div>
+              <label
+                for="name"
+                class="block text-lg font-medium mb-2 text-text-dark"
+                >Nome:</label
+              >
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                class="w-full p-3 border border-border-light rounded-md focus:outline-none focus:ring-2 focus:ring-accent-blue transition-shadow bg-light-gray text-text-dark"
+              />
+              <p id="nameError" class="text-red-500 text-sm mt-1 hidden">
+                Por favor, insira seu nome.
+              </p>
+            </div>
+            <div>
+              <label
+                for="email"
+                class="block text-lg font-medium mb-2 text-text-dark"
+                >E-mail:</label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                class="w-full p-3 border border-border-light rounded-md focus:outline-none focus:ring-2 focus:ring-accent-blue transition-shadow bg-light-gray text-text-dark"
+              />
+              <p id="emailError" class="text-red-500 text-sm mt-1 hidden">
+                Por favor, insira um e-mail válido.
+              </p>
+            </div>
+            <div>
+              <label
+                for="message"
+                class="block text-lg font-medium mb-2 text-text-dark"
+                >Mensagem:</label
+              >
+              <textarea
+                id="message"
+                name="message"
+                rows="6"
+                required
+                class="w-full p-3 border border-border-light rounded-md focus:outline-none focus:ring-2 focus:ring-accent-blue resize-y transition-shadow bg-light-gray text-text-dark"
+              ></textarea>
+              <p id="messageError" class="text-red-500 text-sm mt-1 hidden">
+                Por favor, insira sua mensagem.
+              </p>
+            </div>
+            <button
+              type="submit"
+              class="w-full bg-success-green hover:bg-green-700 text-white font-bold py-3 px-6 rounded-md shadow-lg transition-all duration-300 transform hover:scale-105"
+            >
+              Enviar Mensagem <i class="fas fa-paper-plane ml-2"></i>
+            </button>
+            <div
+              id="formStatus"
+              class="mt-4 text-center text-lg font-semibold"
+            ></div>
+          </form>
+        </div>
+      </section>
     </main>
-    
+
     <button onclick="topFunction()" id="backToTopBtn" title="Voltar ao Topo">
-        <i class="fas fa-arrow-up"></i>
+      <i class="fas fa-arrow-up"></i>
     </button>
-  
+
     <footer class="bg-primary-dark text-light-gray text-center p-6 text-lg">
-        <p class="footer-text">&copy; 2024 Gabriel Ferreira Lopes. Todos os direitos reservados.</p>
-        <p class="mt-2 text-sm footer-text">Desenvolvido com <i class="fas fa-heart text-red-500"></i> e Tailwind CSS.</p>
+      <p class="footer-text">
+        &copy; 2024 Gabriel Ferreira Lopes. Todos os direitos reservados.
+      </p>
+      <p class="mt-2 text-sm footer-text">
+        Desenvolvido com <i class="fas fa-heart text-red-500"></i> e Tailwind
+        CSS.
+      </p>
     </footer>
 
     <script>
-        // Seleciona todos os elementos com a classe 'animate-on-scroll'
-        const animateOnScrollElements = document.querySelectorAll('.animate-on-scroll');
-        // Seleciona o botão "Voltar ao Topo"
-        const backToTopBtn = document.getElementById("backToTopBtn");
+      // Seleciona todos os elementos com a classe 'animate-on-scroll'
+      const animateOnScrollElements =
+        document.querySelectorAll(".animate-on-scroll");
+      // Seleciona o botão "Voltar ao Topo"
+      const backToTopBtn = document.getElementById("backToTopBtn");
 
-        /**
-         * Lida com os eventos de scroll da página, controlando as animações e a visibilidade do botão "Voltar ao Topo".
-         */
-        const handleScroll = () => {
-            // Itera sobre cada elemento com animação no scroll
-            animateOnScrollElements.forEach(el => {
-                const rect = el.getBoundingClientRect(); // Obtém as dimensões e posição do elemento
-                // Verifica se o elemento está parcialmente visível na viewport (com um offset de 150px)
-                if (rect.top < (window.innerHeight - 150) && rect.bottom > 0) {
-                    // Se estiver visível e ainda não tiver a classe 'is-visible', adiciona
-                    if (!el.classList.contains('is-visible')) {
-                        el.classList.add('is-visible');
-                    }
-                }
-            });
-
-            // Controla a visibilidade do botão "Voltar ao Topo"
-            // Se o usuário rolou mais de 100px (em qualquer navegador), mostra o botão
-            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-                backToTopBtn.style.display = "block";
-            } else {
-                backToTopBtn.style.display = "none";
+      /**
+       * Lida com os eventos de scroll da página, controlando as animações e a visibilidade do botão "Voltar ao Topo".
+       */
+      const handleScroll = () => {
+        // Itera sobre cada elemento com animação no scroll
+        animateOnScrollElements.forEach((el) => {
+          const rect = el.getBoundingClientRect(); // Obtém as dimensões e posição do elemento
+          // Verifica se o elemento está parcialmente visível na viewport (com um offset de 150px)
+          if (rect.top < window.innerHeight - 150 && rect.bottom > 0) {
+            // Se estiver visível e ainda não tiver a classe 'is-visible', adiciona
+            if (!el.classList.contains("is-visible")) {
+              el.classList.add("is-visible");
             }
-        };
+          }
+        });
 
-        // Adiciona um único listener para o evento de scroll que chama a função handleScroll
-        window.addEventListener('scroll', handleScroll);
-        // Executa a função uma vez ao carregar a página para animar elementos já visíveis
-        window.addEventListener('load', handleScroll);
-
-        /**
-         * Rola a página suavemente para o topo.
-         */
-        function topFunction() {
-            // Rola para o topo para navegadores que suportam document.body.scrollTop (e.g., Safari)
-            document.body.scrollTop = 0;
-            // Rola para o topo para navegadores que suportam document.documentElement.scrollTop (e.g., Chrome, Firefox, IE, Opera)
-            document.documentElement.scrollTop = 0;
+        // Controla a visibilidade do botão "Voltar ao Topo"
+        // Se o usuário rolou mais de 100px (em qualquer navegador), mostra o botão
+        if (
+          document.body.scrollTop > 100 ||
+          document.documentElement.scrollTop > 100
+        ) {
+          backToTopBtn.style.display = "block";
+        } else {
+          backToTopBtn.style.display = "none";
         }
+      };
 
-        // Lida com o envio do formulário de contato
-        const contactForm = document.getElementById('contactForm');
-        const formStatus = document.getElementById('formStatus');
-        const nameInput = document.getElementById('name');
-        const emailInput = document.getElementById('email');
-        const messageInput = document.getElementById('message');
-        const nameError = document.getElementById('nameError');
-        const emailError = document.getElementById('emailError');
-        const messageError = document.getElementById('messageError');
+      // Adiciona um único listener para o evento de scroll que chama a função handleScroll
+      window.addEventListener("scroll", handleScroll);
+      // Executa a função uma vez ao carregar a página para animar elementos já visíveis
+      window.addEventListener("load", handleScroll);
 
-        if (contactForm) {
-            contactForm.addEventListener('submit', function(event) {
-                event.preventDefault(); // Impede o envio padrão do formulário
+      /**
+       * Rola a página suavemente para o topo.
+       */
+      function topFunction() {
+        // Rola para o topo para navegadores que suportam document.body.scrollTop (e.g., Safari)
+        document.body.scrollTop = 0;
+        // Rola para o topo para navegadores que suportam document.documentElement.scrollTop (e.g., Chrome, Firefox, IE, Opera)
+        document.documentElement.scrollTop = 0;
+      }
 
-                let isValid = true; // Flag para validar o formulário
+      // Lida com o envio do formulário de contato
+      const contactForm = document.getElementById("contactForm");
+      const formStatus = document.getElementById("formStatus");
+      const nameInput = document.getElementById("name");
+      const emailInput = document.getElementById("email");
+      const messageInput = document.getElementById("message");
+      const nameError = document.getElementById("nameError");
+      const emailError = document.getElementById("emailError");
+      const messageError = document.getElementById("messageError");
 
-                // Resetar mensagens de erro
-                nameError.classList.add('hidden');
-                emailError.classList.add('hidden');
-                messageError.classList.add('hidden');
-                formStatus.textContent = ''; // Limpa o status anterior
+      if (contactForm) {
+        contactForm.addEventListener("submit", function (event) {
+          event.preventDefault(); // Impede o envio padrão do formulário
 
-                // Validação do campo Nome
-                if (nameInput.value.trim() === '') {
-                    nameError.textContent = 'Por favor, insira seu nome.';
-                    nameError.classList.remove('hidden');
-                    isValid = false;
-                }
+          let isValid = true; // Flag para validar o formulário
 
-                // Validação do campo E-mail
-                const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-                if (!emailPattern.test(emailInput.value.trim())) {
-                    emailError.textContent = 'Por favor, insira um e-mail válido.';
-                    emailError.classList.remove('hidden');
-                    isValid = false;
-                }
+          // Resetar mensagens de erro
+          nameError.classList.add("hidden");
+          emailError.classList.add("hidden");
+          messageError.classList.add("hidden");
+          formStatus.textContent = ""; // Limpa o status anterior
 
-                // Validação do campo Mensagem
-                if (messageInput.value.trim() === '') {
-                    messageError.textContent = 'Por favor, insira sua mensagem.';
-                    messageError.classList.remove('hidden');
-                    isValid = false;
-                }
+          // Validação do campo Nome
+          if (nameInput.value.trim() === "") {
+            nameError.textContent = "Por favor, insira seu nome.";
+            nameError.classList.remove("hidden");
+            isValid = false;
+          }
 
-                if (isValid) {
-                    // Simula o envio de dados (em um ambiente real, você faria uma requisição AJAX/fetch aqui)
-                    // Exemplo de como seria uma requisição fetch real (descomente e adapte para usar)
-                    /*
+          // Validação do campo E-mail
+          const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          if (!emailPattern.test(emailInput.value.trim())) {
+            emailError.textContent = "Por favor, insira um e-mail válido.";
+            emailError.classList.remove("hidden");
+            isValid = false;
+          }
+
+          // Validação do campo Mensagem
+          if (messageInput.value.trim() === "") {
+            messageError.textContent = "Por favor, insira sua mensagem.";
+            messageError.classList.remove("hidden");
+            isValid = false;
+          }
+
+          if (isValid) {
+            // Simula o envio de dados (em um ambiente real, você faria uma requisição AJAX/fetch aqui)
+            // Exemplo de como seria uma requisição fetch real (descomente e adapte para usar)
+            /*
                     fetch('/api/send-email', { // Substitua por seu endpoint real
                         method: 'POST',
                         headers: { 'Content-Type': 'application/json' },
@@ -435,25 +709,26 @@
                     });
                     */
 
-                    // Simulação de envio para demonstração
-                    formStatus.textContent = 'Mensagem enviada com sucesso! Em breve entraremos em contato.';
-                    formStatus.classList.remove('text-red-500');
-                    formStatus.classList.add('text-success-green');
-                    contactForm.reset(); // Limpa o formulário após o envio simulado
+            // Simulação de envio para demonstração
+            formStatus.textContent =
+              "Mensagem enviada com sucesso! Em breve entraremos em contato.";
+            formStatus.classList.remove("text-red-500");
+            formStatus.classList.add("text-success-green");
+            contactForm.reset(); // Limpa o formulário após o envio simulado
 
-                    // Esconde a mensagem de status após alguns segundos
-                    setTimeout(() => {
-                        formStatus.textContent = '';
-                    }, 5000);
-
-                } else {
-                    // Se o formulário não for válido, exibe uma mensagem geral de erro (opcional)
-                    formStatus.textContent = 'Por favor, corrija os erros no formulário.';
-                    formStatus.classList.remove('text-success-green');
-                    formStatus.classList.add('text-red-500');
-                }
-            });
-        }
+            // Esconde a mensagem de status após alguns segundos
+            setTimeout(() => {
+              formStatus.textContent = "";
+            }, 5000);
+          } else {
+            // Se o formulário não for válido, exibe uma mensagem geral de erro (opcional)
+            formStatus.textContent =
+              "Por favor, corrija os erros no formulário.";
+            formStatus.classList.remove("text-success-green");
+            formStatus.classList.add("text-red-500");
+          }
+        });
+      }
     </script>
-</body>
+  </body>
 </html>
