@@ -15,19 +15,19 @@
             theme: {
                 extend: {
                     colors: {
-                        'primary-dark': '#212B36',       /* Azul escuro mais profundo */
-                        'accent-blue': '#007BFF',        /* Azul vibrante para destaques */
-                        'light-gray': '#F5F7FA',         /* Cinza claro para fundos */
-                        'medium-gray': '#6B7280',        /* Cinza médio para detalhes */
-                        'success-green': '#28A745',      /* Verde para sucesso/botões */
-                        'whatsapp-green': '#25D366',     /* Verde do WhatsApp */
-                        'text-dark': '#344054',          /* Cor de texto mais escura e profissional */
-                        'border-light': '#D1D5DB',       /* Cor de borda clara */
-                        'hero-gradient-start': '#1A237E', /* Azul escuro mais dramático para o gradiente */
-                        'hero-gradient-end': '#42A5F5',   /* Azul mais claro para o gradiente */
+                        'primary-dark': '#212B36',
+                        'accent-blue': '#007BFF',
+                        'light-gray': '#F5F7FA',
+                        'medium-gray': '#6B7280',
+                        'success-green': '#28A745',
+                        'whatsapp-green': '#25D366',
+                        'text-dark': '#344054',
+                        'border-light': '#D1D5DB',
+                        'hero-gradient-start': '#1A237E',
+                        'hero-gradient-end': '#42A5F5',
                     },
                     fontFamily: {
-                        sans: ['Inter', 'sans-serif'], /* Define a fonte Inter como padrão */
+                        sans: ['Inter', 'sans-serif'],
                     }
                 }
             }
@@ -55,7 +55,6 @@
     </header>
 
     <main>
-        <!-- Seção Hero/Introdução -->
         <section id="hero" class="bg-gradient-to-r from-hero-gradient-start to-hero-gradient-end text-light-gray min-h-screen flex items-center justify-center text-center p-4">
             <div class="animate-on-scroll is-visible p-8 rounded-lg">
                 <h1 class="text-5xl md:text-7xl font-extrabold mb-4 leading-tight">
@@ -78,7 +77,6 @@
             </div>
         </section>
 
-        <!-- Seção Sobre Mim -->
         <section id="about" class="section-padding bg-white shadow-md rounded-lg animate-on-scroll">
             <h2 class="text-4xl font-bold text-center mb-8 text-primary-dark">Sobre Mim</h2>
             <div class="flex flex-col md:flex-row items-center justify-center gap-8 mb-8">
@@ -96,7 +94,6 @@
                     </p>
                 </div>
             </div>
-            <!-- Educação integrada aqui -->
             <div class="mt-10 pt-6 border-t border-border-light flex items-center flex-col md:flex-row text-center md:text-left">
                 <i class="fas fa-graduation-cap text-accent-blue text-5xl md:text-6xl mr-0 md:mr-6 mb-4 md:mb-0"></i>
                 <div>
@@ -114,12 +111,10 @@
             </div>
         </section>
 
-        <!-- Seção Habilidades -->
         <section id="skills" class="section-padding bg-light-gray animate-on-scroll">
             <h2 class="text-4xl font-bold text-center mb-8 text-primary-dark">Minhas Habilidades</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 text-center max-w-4xl mx-auto">
 
-                <!-- Card de Front-End -->
                 <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 border border-border-light skill-icon-hover">
                     <h3 class="text-2xl font-semibold mb-4 text-accent-blue">Front-End</h3>
                     <ul class="space-y-3 text-lg text-text-dark">
@@ -132,7 +127,6 @@
                     </ul>
                 </div>
 
-                <!-- Card de Back-End -->
                 <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 border border-border-light skill-icon-hover">
                     <h3 class="text-2xl font-semibold mb-4 text-accent-blue">Back-End</h3>
                     <ul class="space-y-3 text-lg text-text-dark">
@@ -142,7 +136,6 @@
                     </ul>
                 </div>
 
-                <!-- Card de Banco de Dados e Ferramentas -->
                 <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 border border-border-light skill-icon-hover">
                     <h3 class="text-2xl font-semibold mb-4 text-accent-blue">Banco de Dados & Ferramentas</h3>
                     <ul class="space-y-3 text-lg text-text-dark">
@@ -152,7 +145,6 @@
                     </ul>
                 </div>
 
-                <!-- Card de Outros -->
                 <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 border border-border-light sm:col-span-2 lg:col-span-1 mx-auto w-full sm:max-w-xs lg:max-w-none skill-icon-hover">
                     <h3 class="text-2xl font-semibold mb-4 text-accent-blue">Outros</h3>
                     <ul class="space-y-3 text-lg text-text-dark">
@@ -165,14 +157,11 @@
             </div>
         </section>
 
-        <!-- Seção Projetos -->
         <section id="projects" class="section-padding bg-white animate-on-scroll">
             <h2 class="text-4xl font-bold text-center mb-12 text-primary-dark">Meus Projetos</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
 
-                <!-- Projeto Exemplo 1: Página de Receitas -->
                 <div class="bg-light-gray p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 border border-border-light">
-                    <!-- Alt text melhorado para acessibilidade e SEO -->
                     <img src="https://placehold.co/600x400/D1D5DB/212B36?text=Projeto+Receitas" alt="Screenshot da página web de receitas, mostrando o layout principal e uma receita." class="rounded-md mb-4 w-full h-48 object-cover border border-gray-300">
                     <h3 class="text-2xl font-semibold mb-2 text-primary-dark">Página de Receitas</h3>
                     <p class="text-medium-gray mb-4">
@@ -184,15 +173,12 @@
                         <span class="bg-accent-blue text-white text-xs px-3 py-1 rounded-full">JavaScript</span>
                     </div>
                     <div class="flex justify-between items-center mt-4">
-                        <!-- Links vazios com aria-disabled e tabindex para acessibilidade -->
                         <a href="#" class="text-accent-blue hover:underline font-semibold text-base" aria-disabled="true" tabindex="-1">Ver Código <i class="fab fa-github ml-1"></i></a>
                         <a href="#" class="bg-success-green hover:bg-green-700 text-white text-sm py-2 px-4 rounded-full transition-colors duration-300" aria-disabled="true" tabindex="-1">Ver Projeto <i class="fas fa-external-link-alt ml-1"></i></a>
                     </div>
                 </div>
 
-                <!-- Projeto Exemplo 2: Calculadora Web -->
                 <div class="bg-light-gray p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 border border-border-light">
-                    <!-- Alt text melhorado -->
                     <img src="https://placehold.co/600x400/D1D5DB/212B36?text=Projeto+Calculadora" alt="Imagem de uma calculadora web funcional, mostrando botões numéricos e de operações." class="rounded-md mb-4 w-full h-48 object-cover border border-gray-300">
                     <h3 class="text-2xl font-semibold mb-2 text-primary-dark">Calculadora Web</h3>
                     <p class="text-medium-gray mb-4">
@@ -204,15 +190,12 @@
                         <span class="bg-accent-blue text-white text-xs px-3 py-1 rounded-full">JavaScript</span>
                     </div>
                     <div class="flex justify-between items-center mt-4">
-                        <!-- Links vazios com aria-disabled e tabindex para acessibilidade -->
                         <a href="#" class="text-accent-blue hover:underline font-semibold text-base" aria-disabled="true" tabindex="-1">Ver Código <i class="fab fa-github ml-1"></i></a>
                         <a href="#" class="bg-success-green hover:bg-green-700 text-white text-sm py-2 px-4 rounded-full transition-colors duration-300" aria-disabled="true" tabindex="-1">Ver Projeto <i class="fas fa-external-link-alt ml-1"></i></a>
                     </div>
                 </div>
 
-                <!-- Projeto Exemplo 3: API de Cadastro (Backend) -->
                 <div class="bg-light-gray p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 border border-border-light">
-                    <!-- Alt text melhorado -->
                     <img src="https://placehold.co/600x400/D1D5DB/212B36?text=Projeto+API" alt="Ilustração de uma API, representando o backend de gerenciamento de usuários." class="rounded-md mb-4 w-full h-48 object-cover border border-gray-300">
                     <h3 class="text-2xl font-semibold mb-2 text-primary-dark">API de Cadastro Simples</h3>
                     <p class="text-medium-gray mb-4">
@@ -224,14 +207,10 @@
                         <span class="bg-accent-blue text-white text-xs px-3 py-1 rounded-full">MySQL</span>
                     </div>
                     <div class="flex justify-between items-center mt-4">
-                        <!-- Links vazios com aria-disabled e tabindex para acessibilidade -->
                         <a href="#" class="text-accent-blue hover:underline font-semibold text-base" aria-disabled="true" tabindex="-1">Ver Código <i class="fab fa-github ml-1"></i></a>
-                        <!-- Como é uma API, não há link para "Ver Projeto" -->
                         <span class="text-sm text-medium-gray"><i>(Sem deploy público)</i></span>
                     </div>
                 </div>
-
-                <!-- Adicione mais projetos aqui seguindo o mesmo padrão -->
 
             </div>
             <div class="text-center mt-12">
@@ -241,24 +220,20 @@
             </div>
         </section>
 
-        <!-- Seção Contato -->
         <section id="contact" class="section-padding bg-white shadow-md rounded-lg animate-on-scroll">
             <h2 class="text-4xl font-bold text-center mb-12 text-primary-dark">Entre em Contato</h2>
-            <div class="max-w-2xl mx-auto flex flex-col items-center"> <!-- Adicionado flex-col e items-center para garantir centralização vertical e horizontal -->
-                <div class="flex flex-wrap justify-center gap-8 mb-10 w-full"> <!-- w-full para garantir que o flex ocupe o espaço disponível -->
-                    <!-- Link para GitHub -->
+            <div class="max-w-2xl mx-auto flex flex-col items-center">
+                <div class="flex flex-wrap justify-center gap-8 mb-10 w-full">
                     <a href="https://github.com/gabrielfl123" target="_blank" rel="noopener noreferrer"
                        class="flex items-center space-x-3 text-primary-dark hover:text-accent-blue transition-colors duration-300 transform hover:scale-105">
                         <i class="fab fa-github text-4xl"></i>
                         <span class="text-xl font-semibold">GitHub</span>
                     </a>
-                    <!-- Link para LinkedIn -->
                     <a href="https://www.linkedin.com/in/gabrielfl-gfl/" target="_blank" rel="noopener noreferrer"
                        class="flex items-center space-x-3 text-primary-dark hover:text-accent-blue transition-colors duration-300 transform hover:scale-105">
                         <i class="fab fa-linkedin text-4xl"></i>
                         <span class="text-xl font-semibold">LinkedIn</span>
                     </a>
-                    <!-- Botão para WhatsApp -->
                     <a href="https://wa.me/5516994314040" target="_blank" rel="noopener noreferrer"
                        class="flex items-center space-x-3 text-white bg-whatsapp-green hover:bg-green-600 py-3 px-6 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105">
                         <i class="fab fa-whatsapp text-4xl"></i>
@@ -270,7 +245,6 @@
                     Ou envie uma mensagem diretamente:
                 </p>
 
-                <!-- Formulário de Contato -->
                 <form id="contactForm" class="space-y-6 w-full">
                     <div>
                         <label for="name" class="block text-lg font-medium mb-2 text-text-dark">Nome:</label>
@@ -310,29 +284,19 @@
     </footer>
 
     <script>
-        // Seleciona todos os elementos com a classe 'animate-on-scroll'
         const animateOnScrollElements = document.querySelectorAll('.animate-on-scroll');
-        // Seleciona o botão "Voltar ao Topo"
         const backToTopBtn = document.getElementById("backToTopBtn");
 
-        /**
-         * Lida com os eventos de scroll da página, controlando as animações e a visibilidade do botão "Voltar ao Topo".
-         */
         const handleScroll = () => {
-            // Itera sobre cada elemento com animação no scroll
             animateOnScrollElements.forEach(el => {
-                const rect = el.getBoundingClientRect(); // Obtém as dimensões e posição do elemento
-                // Verifica se o elemento está parcialmente visível na viewport (com um offset de 150px)
+                const rect = el.getBoundingClientRect();
                 if (rect.top < (window.innerHeight - 150) && rect.bottom > 0) {
-                    // Se estiver visível e ainda não tiver a classe 'is-visible', adiciona
                     if (!el.classList.contains('is-visible')) {
                         el.classList.add('is-visible');
                     }
                 }
             });
 
-            // Controla a visibilidade do botão "Voltar ao Topo"
-            // Se o usuário rolou mais de 100px (em qualquer navegador), mostra o botão
             if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
                 backToTopBtn.style.display = "block";
             } else {
@@ -340,22 +304,14 @@
             }
         };
 
-        // Adiciona um único listener para o evento de scroll que chama a função handleScroll
         window.addEventListener('scroll', handleScroll);
-        // Executa a função uma vez ao carregar a página para animar elementos já visíveis
         window.addEventListener('load', handleScroll);
 
-        /**
-         * Rola a página suavemente para o topo.
-         */
         function topFunction() {
-            // Rola para o topo para navegadores que suportam document.body.scrollTop (e.g., Safari)
             document.body.scrollTop = 0;
-            // Rola para o topo para navegadores que suportam document.documentElement.scrollTop (e.g., Chrome, Firefox, IE, Opera)
             document.documentElement.scrollTop = 0;
         }
 
-        // Lida com o envio do formulário de contato
         const contactForm = document.getElementById('contactForm');
         const formStatus = document.getElementById('formStatus');
         const nameInput = document.getElementById('name');
@@ -367,24 +323,21 @@
 
         if (contactForm) {
             contactForm.addEventListener('submit', function(event) {
-                event.preventDefault(); // Impede o envio padrão do formulário
+                event.preventDefault();
 
-                let isValid = true; // Flag para validar o formulário
+                let isValid = true;
 
-                // Resetar mensagens de erro
                 nameError.classList.add('hidden');
                 emailError.classList.add('hidden');
                 messageError.classList.add('hidden');
-                formStatus.textContent = ''; // Limpa o status anterior
+                formStatus.textContent = '';
 
-                // Validação do campo Nome
                 if (nameInput.value.trim() === '') {
                     nameError.textContent = 'Por favor, insira seu nome.';
                     nameError.classList.remove('hidden');
                     isValid = false;
                 }
 
-                // Validação do campo E-mail
                 const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
                 if (!emailPattern.test(emailInput.value.trim())) {
                     emailError.textContent = 'Por favor, insira um e-mail válido.';
@@ -392,7 +345,6 @@
                     isValid = false;
                 }
 
-                // Validação do campo Mensagem
                 if (messageInput.value.trim() === '') {
                     messageError.textContent = 'Por favor, insira sua mensagem.';
                     messageError.classList.remove('hidden');
@@ -400,19 +352,16 @@
                 }
 
                 if (isValid) {
-                    // Simulação de envio para demonstração
                     formStatus.textContent = 'Mensagem enviada com sucesso! Em breve entraremos em contato.';
                     formStatus.classList.remove('text-red-500');
                     formStatus.classList.add('text-success-green');
-                    contactForm.reset(); // Limpa o formulário após o envio simulado
+                    contactForm.reset();
 
-                    // Esconde a mensagem de status após alguns segundos
                     setTimeout(() => {
                         formStatus.textContent = '';
                     }, 5000);
 
                 } else {
-                    // Se o formulário não for válido, exibe uma mensagem geral de erro (opcional)
                     formStatus.textContent = 'Por favor, corrija os erros no formulário.';
                     formStatus.classList.remove('text-success-green');
                     formStatus.classList.add('text-red-500');
