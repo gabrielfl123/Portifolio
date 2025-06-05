@@ -35,89 +35,7 @@
     </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
-    <style>
-        /*
-         * Estilos CSS personalizados para o portfólio de Gabriel Ferreira Lopes.
-         * Complementa e estende os estilos do Tailwind CSS.
-         */
-
-        /* Garante rolagem suave ao navegar para âncoras na página */
-        html {
-            scroll-behavior: smooth;
-        }
-
-        /* Estilos gerais para o corpo da página, definindo fonte e cores padrão */
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #F5F7FA; /* Cor de fundo padrão: light-gray do Tailwind */
-            color: #212B36; /* Cor de texto padrão: primary-dark do Tailwind */
-        }
-
-        /* Define padding e centralização para todas as seções principais do portfólio */
-        .section-padding {
-            padding: 5rem 1.5rem; /* Padding vertical e horizontal padrão */
-            max-width: 1200px; /* Largura máxima do conteúdo para legibilidade */
-            margin: 0 auto; /* Centraliza o conteúdo da seção horizontalmente */
-        }
-
-        /* Ajusta o padding das seções para telas maiores (a partir de 768px de largura) */
-        @media (min-width: 768px) {
-            .section-padding {
-                padding: 7rem 2rem; /* Padding maior em telas maiores */
-            }
-        }
-
-        /* Estilos para elementos que terão animação ao rolar a página */
-        .animate-on-scroll {
-            opacity: 0; /* Começa invisível */
-            transform: translateY(20px); /* Começa ligeiramente abaixo de sua posição final */
-            transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Transição suave para visibilidade e posição */
-        }
-
-        /* Classe adicionada via JavaScript quando o elemento se torna visível na tela */
-        .animate-on-scroll.is-visible {
-            opacity: 1; /* Torna o elemento totalmente visível */
-            transform: translateY(0); /* Move o elemento para sua posição original */
-        }
-
-        /* Garante que os links de navegação do cabeçalho e textos do rodapé não quebrem linha */
-        .header-nav-link, .footer-text {
-            white-space: nowrap; /* Impede a quebra de linha */
-        }
-
-        /* Estilos para o botão "Voltar ao Topo" */
-        #backToTopBtn {
-            display: none; /* Escondido por padrão, será mostrado via JavaScript */
-            position: fixed; /* Posição fixa na tela, não rola com o conteúdo */
-            bottom: 20px; /* 20px de distância da parte inferior da viewport */
-            right: 20px; /* 20px de distância da direita da viewport */
-            z-index: 99; /* Garante que o botão fique acima de outros elementos */
-            border: none; /* Sem borda */
-            outline: none; /* Remove o contorno padrão de foco */
-            background-color: #007BFF; /* Cor de fundo: accent-blue do Tailwind */
-            color: white; /* Cor do ícone/texto */
-            cursor: pointer; /* Muda o cursor para indicar que é clicável */
-            padding: 15px; /* Preenchimento interno para maior área de clique */
-            border-radius: 50%; /* Torna o botão perfeitamente redondo */
-            font-size: 18px; /* Tamanho do ícone da seta */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra suave */
-            transition: background-color 0.3s, transform 0.3s; /* Transição suave para efeitos de hover */
-        }
-
-        /* Efeitos de hover para o botão "Voltar ao Topo" */
-        #backToTopBtn:hover {
-            background-color: #0056b3; /* Cor de fundo mais escura ao passar o mouse */
-            transform: translateY(-5px); /* Efeito sutil de "elevação" */
-        }
-
-        /* Animação para ícones de habilidades ao passar o mouse */
-        /* Aplica-se tanto aos ícones de marcas (fab) quanto aos sólidos (fas) */
-        .skill-icon-hover:hover .fa-brands,
-        .skill-icon-hover:hover .fa-solid {
-            transform: scale(1.1); /* Aumenta o tamanho do ícone em 10% */
-            transition: transform 0.2s ease-in-out; /* Transição suave para o efeito de escala */
-        }
-    </style>
+    
 </head>
 <body class="bg-light-gray text-primary-dark">
 
@@ -150,7 +68,7 @@
                     <a href="#projects" class="bg-success-green hover:bg-green-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105 inline-block w-full sm:w-auto">
                         Ver Meus Projetos <i class="fas fa-arrow-right ml-2"></i>
                     </a>
-                    <!-- Adicionado 'aria-disabled' e 'tabindex' para links vazios para melhor acessibilidade -->
+                    
                     <a href="Gabriel, curriculo dev.pdf" download="Curriculo_Gabriel_Ferreira_Lopes.pdf"
                        class="bg-transparent border-2 border-light-gray hover:border-accent-blue text-light-gray hover:text-accent-blue font-bold py-3 px-8 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105 inline-block w-full sm:w-auto"
                        aria-disabled="true" tabindex="-1">
@@ -164,9 +82,8 @@
         <section id="about" class="section-padding bg-white shadow-md rounded-lg animate-on-scroll">
             <h2 class="text-4xl font-bold text-center mb-8 text-primary-dark">Sobre Mim</h2>
             <div class="flex flex-col md:flex-row items-center justify-center gap-8 mb-8">
-                <!-- Espaço para a foto de perfil de Gabriel -->
-                <!-- Por favor, substitua a URL da imagem (src) pela URL da sua foto. -->
-                <img src="Portifolio/assets/gabroel foto perfil.jpg" alt="Foto de perfil de Gabriel Ferreira Lopes" class="w-48 h-48 rounded-full object-cover shadow-lg border-4 border-accent-blue transition-transform duration-300 transform hover:scale-105">
+                
+                <img src="assets/gabroel foto perfil.jpg" alt="Foto de perfil de Gabriel Ferreira Lopes" class="w-48 h-48 rounded-full object-cover shadow-lg border-4 border-accent-blue transition-transform duration-300 transform hover:scale-105">
                 <div class="text-lg md:text-xl leading-relaxed max-w-3xl mx-auto text-text-dark md:text-left text-center">
                     <p class="mb-4">
                         Entusiasta da tecnologia e futuro desenvolvedor full stack, tenho 23 anos e estou imerso no universo da programação através do curso de <strong class="text-accent-blue">Análise e Desenvolvimento de Sistemas (ADS)</strong> na Unicesumar.
